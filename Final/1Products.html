@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="product.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -25,8 +26,9 @@
             <a href="0Home.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
             <a href="1Products.html" class="w3-bar-item w3-button w3-padding-large w3-white">Products</a>
             <a href="2About.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About</a>
-            <a href="3Contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-            <a href="5Admin.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin</a>
+            <a href="3Contact.html"
+                class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+            <a href="5AdminLogin.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Admin</a>
         </div>
 
         <!-- Navbar on small screens -->
@@ -41,7 +43,7 @@
     <!-- Header -->
     <header class="w3-container w3-black w3-center" style="padding:64px 16px">
         <div class="logo">
-            <img src="logo.png">
+            <img src="pictures/logo.png">
         </div>
         <p2>Brown Charcoal Pty Ltd</p2>
         <h1>Products</h1>
@@ -50,34 +52,76 @@
     <!-- First Grid -->
 
     <div class="main w3-container">
-        <h1>Products. </h1>
-        <div>
-            <li>
-                <figure ><img src="0.jpg" alt="pic1" class="threePic">
-                    <figcaption>Briquettes</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure><img src="1.jpg" alt="pic2" class="threePic">
-                    <figcaption>Export charcoal</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure ><img src="2.jpg" alt="pic3" class="threePic">
-                    <figcaption>Charcoal dust</figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure ><img src="3.jpg" alt="pic4" class="threePic">
-                    <figcaption>Local charcoal</figcaption>
-                </figure>
-            </li>
+        <div class="wrapper">
+            <div class="view_main">
+                <div class="view_wrap list-view" style="display: block;">
+                    <div class="view_item">
+                        <div class="vi_left">
+                            <img src="pictures/export.jpg" alt="export">
+                        </div>
+                        <div class="vi_right">
+                            <p class="title">Export Charcoal</p>
+                            <p class="title">R9000,00 per Ton</p>
+                            <p class="content">Export charcoal varies in size from between 5 - 12 cm in diameter.
+                                This product went through three different screening processes.
+                            </p>
+                            <input type="number" id="exp_quantity" name="addExp">
+                            <input type="submit" value="Add to Cart">
+                        </div>
+                    </div>
+                    <div class="view_item">
+                        <div class="vi_left">
+                            <img src="pictures/briq.jpg" alt="briquettes">
+                        </div>
+                        <div class="vi_right">
+                            <p class="title">Briquettes</p>
+                            <p class="title">R4000,00 per Ton</p>
+                            <p class="content">Briquettes are made from smaller pieces of charcoal that did not meet the
+                                size specification and was sent through a milling process.
+                                The charcoal dust was then mixed with water and binding materials and pressed into
+                                briquettes.
+                                Briquettes are then left to dry for about 5 days until ready. </p>
+                            <input type="number" id="briq_quantity" name="addBriq">
+                            <input type="submit" value="Add to Cart">
+                        </div>
+                    </div>
+                    <div class="view_item">
+                        <div class="vi_left">
+                            <img src="pictures/dust.jpg" alt="dust">
+                        </div>
+                        <div class="vi_right">
+                            <p class="title">Charcoal Dust</p>
+                            <p class="title">R3000,00 per Ton</p>
+                            <p class="content">Charcoal dust is sometimes used for health care products,
+                                filtration systems and more. We offer charcoal dust that went through a screen size of
+                                about 0.5 centimetres. </p>
+                            <input type="number" id="dust_quantity" name="addDus">
+                            <input type="submit" value="Add to Cart">
+                        </div>
+                    </div>
+                    <div class="view_item">
+                        <div class="vi_left">
+                            <img src="pictures/local.jpg" alt="local">
+                        </div>
+                        <div class="vi_right">
+                            <p class="title">Local Charcoal</p>
+                            <p class="title">R 3800,00 per Ton</p>
+                            <p class="content">Our local charcoal is widely known in underlying areas,
+                                we supply a lot of local shops and distros. The product size ranges between 2 and 6 cm
+                                in size and is perfect for a braai. </p>
+                            <input type="number" id="local_quantity" name="addLoc">
+                            <input type="submit" value="Add to Cart">
+                        </div>
+                    </div>
+                </div>
+                <div class=" w3-black w3-card w3-center-align w3-large">
+                    <a href="4Checkout.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white center-text">Checkout</a>
+                </div>
+            </div>
         </div>
-    </div>
-
-    <div class="w3-container w3-black w3-center w3-padding-64">
-        <p>3D8BCMQ24 Heinrich Scheepers</p>
-    </div>
+        <div class="w3-container w3-black w3-center w3-padding-64">
+            <p>3D8BCMQ24 Heinrich Scheepers</p>
+        </div>
 
 </body>
 
