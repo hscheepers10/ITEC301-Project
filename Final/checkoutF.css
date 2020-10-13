@@ -1,7 +1,6 @@
 body {
     font-family: Arial;
     font-size: 17px;
-    padding: 8px;
   }
   
   * {
@@ -17,6 +16,7 @@ body {
   }
   
   .col-25 {
+    padding: 100px;
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
   }
@@ -39,7 +39,17 @@ body {
   
   .container {
     background-color: #f2f2f2;
-    padding: 5px 20px 15px 20px;
+    margin: 10px;
+    padding: 20px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+
+  .container1 {
+    background-color: #f2f2f2;
+    margin: 10px;
+    padding-top: 250px;
+    padding: 20px 20px 15px 20px;
     border: 1px solid lightgrey;
     border-radius: 3px;
   }

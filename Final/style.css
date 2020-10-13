@@ -39,6 +39,10 @@ p2{
 .w3-bar, h1, button {
     font-family: "Montserrat", sans-serif
 }
+.my-container{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
 .fa-anchor, .fa-coffee {
     font-size: 200px
